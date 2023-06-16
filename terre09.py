@@ -13,12 +13,12 @@ if len(sys.argv) == 2:
     for X in range(1,len(sys.argv)):
         if sys.argv[X].isalpha():
             print("erreur.")
-            break
+            exit()
     for X in range(1,len(sys.argv)):
         if sys.argv[X].isdigit():
             continue
         else:
             print("erreur.")
-            break
+            exit()
     else: print(int(math.sqrt(int(sys.argv[1]))))
 else: print("erreur.")
